@@ -1,0 +1,3 @@
+# Importance of Java
+
+Java is a multi platform OOP language that is commonly used across the world. It gave birth to a whole new generation of ecosystem and still has a large presense to this date. Its syntax is based on C++ and developed originally in the 1990s. While VMs is a common concept these days, it was a novel idea when it was first introduced. Personally, I am excited to learn about this space.
