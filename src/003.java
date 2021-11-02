@@ -71,6 +71,32 @@ class Three {
         System.out.println(area);
     }
 
+    public static String eight(String compass) {
+        if (compass == "N") {
+            return "E";
+        }
+        if (compass == "E") {
+            return "S";
+        }
+        if (compass == "S") {
+            return "W";
+        }
+        if (compass == "W") {
+            return "N";
+        }
+        return "";
+    }
+
+    public static int nine(int month) {
+        if (month == 2) {
+            return 28;
+        } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+            return 30;
+        } else {
+            return 31;
+        }
+    }
+
     public static void sum_to(int n) {
         six(n);
     }
@@ -79,7 +105,15 @@ class Three {
         seven(r);
     }
 
+    public static String turn_clockwise(String compass) {
+        return eight(compass);
+    }
+
+    public static int days_in_month(int month) {
+        return nine(month);
+    }
+
     public static void main(String[] args) {
-        seven(1.23);
+        eight("S");
     }
 }
