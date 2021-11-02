@@ -49,7 +49,16 @@ class Three {
         System.out.println(count);
     }
 
-    public static void five(int n) {
+    public static void five() {
+        int[] list = { 2, 3, 4 };
+        int count = 0;
+        for (Integer n : list) {
+            count += n * n;
+        }
+        System.out.println(count);
+    }
+
+    public static void six(int n) {
         int count = 0;
         for (int i = 1; i <= n; i++) {
             count += i;
@@ -57,11 +66,20 @@ class Three {
         System.out.println(count);
     }
 
+    public static void seven(Double r) {
+        Double area = Math.PI * r * r;
+        System.out.println(area);
+    }
+
     public static void sum_to(int n) {
-        five(n);
+        six(n);
+    }
+
+    public static void area_of_circle(Double r) {
+        seven(r);
     }
 
     public static void main(String[] args) {
-        sum_to(10);
+        seven(1.23);
     }
 }
