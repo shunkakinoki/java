@@ -97,6 +97,10 @@ class Three {
         }
     }
 
+    public static int ten(int hours, int minutes, int seconds) {
+        return hours * 60 * 60 + minutes * 60 + seconds;
+    }
+
     public static void sum_to(int n) {
         six(n);
     }
@@ -113,7 +117,11 @@ class Three {
         return nine(month);
     }
 
+    public static int to_secs(int hours, int minutes, int seconds) {
+        return ten(hours, minutes, seconds);
+    }
+
     public static void main(String[] args) {
-        eight("S");
+        to_secs(2, 30, 10);
     }
 }
