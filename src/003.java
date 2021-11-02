@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class Three {
     static String[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September",
             "October", "November", "December" };
@@ -29,9 +27,9 @@ class Three {
     }
 
     public static void three() {
-        int[] age = { 3, 2, 7, 8, 9 };
+        int[] list = { 3, 2, 7, 8, 9 };
         int oddCount = 0;
-        for (Integer n : age) {
+        for (Integer n : list) {
             if (n % 2 != 0) {
                 oddCount++;
             }
@@ -39,7 +37,31 @@ class Three {
         System.out.println(oddCount);
     }
 
+    public static void four() {
+        int[] list = { 3, 2, 7, 8, 9 };
+        int count = 0;
+        for (int i = 0; i < list.length; i++) {
+            if (i == 0) {
+                continue;
+            }
+            count += list[i];
+        }
+        System.out.println(count);
+    }
+
+    public static void five(int n) {
+        int count = 0;
+        for (int i = 1; i <= n; i++) {
+            count += i;
+        }
+        System.out.println(count);
+    }
+
+    public static void sum_to(int n) {
+        five(n);
+    }
+
     public static void main(String[] args) {
-        three();
+        sum_to(10);
     }
 }
