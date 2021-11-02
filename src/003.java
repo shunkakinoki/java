@@ -2,6 +2,7 @@
 class Three {
     static String[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September",
             "October", "November", "December" };
+    static Integer[] numbers = { 12, 10, 32, 3, 66, 17, 42, 99, 20 };
 
     public static void one() {
         for (String s : months) {
@@ -9,7 +10,24 @@ class Three {
         }
     }
 
+    public static void two() {
+        int total = 0;
+        int productSum = 0;
+        for (Integer n : numbers) {
+            System.out.println(n);
+            System.out.println(n * n);
+        }
+        for (Integer n : numbers) {
+            total += n;
+        }
+        System.out.println(total);
+        for (Integer n : numbers) {
+            productSum += n * n;
+        }
+        System.out.println(productSum);
+    }
+
     public static void main(String[] args) {
-        one();
+        two();
     }
 }
